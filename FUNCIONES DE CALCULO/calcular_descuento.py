@@ -1,10 +1,10 @@
-def calcular_descuento(monto_total, porcentaje_descuento=10):
+def calcular_descuento(monto_total, porcentaje_descuento=15):
     """
     Calcula el descuento aplicando el porcentaje al monto total de la compra.
 
     Args:
     monto_total (float): Monto total de la compra.
-    porcentaje_descuento (float, optional): Porcentaje de descuento a aplicar. Por defecto es 10.
+    porcentaje_descuento (float, optional): Porcentaje de descuento a aplicar. Por defecto es 15.
 
     Returns:
     float: Monto del descuento calculado.

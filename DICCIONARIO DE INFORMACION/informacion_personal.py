@@ -1,23 +1,25 @@
-# Crear el diccionario
-informacion_personal = {
-    "Nombre": "Daniel Neajic",
-    "edad": 27,
-    "Ciudad": "Puyo",
-}
+# Creamos un diccionario con información personal ficticia para cada persona
+informacion_personas = [
+    {"Nombre": "Daniel Neajic", "Edad": 27, "Ciudad": "loja"},
+    {"nombre": "Vale Garcia", "edad": 28, "ciudad": "Ambato"},
+    {"nombre": "Carlos Parra", "edad": 29, "ciudad": "Cuenca"},
+    {"nombre": "Gabriel Valdez", "edad": 30, "ciudad": "Quito"}
+]
 
-# Acceder al valor asociado con la clave "ciudad" y modificarlo
-informacion_personal["Ciudad"] = "Puyo"
+# Accedemos al valor asociado con la clave "ciudad" y lo modificamos
+informacion_personas[0]["Ciudad"] = "Puyo"
 
-# Agregar una nueva clave-valor representando la profesión
-informacion_personal["Profesion"] = "Estudiante Universitario"
+# Agregamos una nueva clave-valor representando la profesión de la persona
+informacion_personas[0]["Profesion"] = "Servidor Publico"
 
-# Verificar si la clave "telefono" existe y agregarla si no
-if "Telefono" not in informacion_personal:
-    informacion_personal["Telefono"] = "0992937972"
+# Verificamos si la clave "telefono" existe y la agregamos si no existe
+if "Telefono" not in informacion_personas[0]:
+    informacion_personas[0]["Telefono"] = "0992937972"
 
-# Eliminar la clave "edad"
-informacion_personal.pop("edad")
+# Eliminamos la clave "edad" del diccionario
+if "edad" in informacion_personas[0]:
+    del informacion_personas[0]["edad"]
 
-# Imprimir el diccionario final
-print("Diccionario Final:")
-print(informacion_personal)
+# Imprimimos el diccionario final de la primera persona
+print("Información de la primera persona después de las modificaciones:")
+print(informacion_personas[0])
